@@ -3,33 +3,68 @@
     padding: 3px;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+    outline: 4px solid red;
 }
 
-/* testing */
-
-body header {
-    border-style: solid;
-    border-color: black;
-}
-
-body header h3 {
-    float: right;
-}
-
-/* main */
+/* header */
 .outer-container {
     padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
-p {
-    font-size: 15px;
+h3 {
+    font-size: 25px;
 }
 
 button {
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
 }
 
-.header button {
-    
+.header h3 {
+    float: right;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+/* inner */
+
+.inner-container {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quiz-intro, main {
+    text-align: center;
+   font-size: 40px;
+}
+
+.quiz-intro button {
+    align-items: center;
+}
+
+main {
+    display: block;
+}
+
+.quiz-questions {
+    display: none;
+}
+
+.quiz-end {
+    display: block;
+}
+
+.highscore {
+    display: block;
 }
